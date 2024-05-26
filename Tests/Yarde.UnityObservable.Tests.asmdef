@@ -1,0 +1,22 @@
+{
+    "name": "Yarde.UnityObservable.Tests",
+    "rootNamespace": "Yarde.UnityObservable.Tests",
+    "references": [
+        "Yarde.UnityObservable",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,13 @@
+{
+  "name": "com.yarde-games.unity-observable",
+  "version": "0.0.1",
+  "displayName": "Unity Observable",
+  "description": "Observable pattern implementation for Unity with disposables",
+  "unity": "2021.1",
+  "keywords": ["observable", "disposable", "reactive", "mvvm"],
+  "author": {
+    "name": "Yarde Games",
+    "email": "yardegames@gmail.com",
+    "url": "https://github.com/Yarde"
+  }
+}
