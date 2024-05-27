@@ -1,0 +1,15 @@
+{
+    "name": "Yarde.UnityObservable.Samples",
+    "rootNamespace": "Yarde.UnityObservable.Samples",
+    "references": [
+        "Yarde.UnityObservable",
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

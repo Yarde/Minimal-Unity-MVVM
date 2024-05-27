@@ -1,8 +1,7 @@
 {
   "name": "Yarde.UnityObservable",
   "rootNamespace": "Yarde.UnityObservable",
-  "references": [
-  ],
+  "references": [],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
