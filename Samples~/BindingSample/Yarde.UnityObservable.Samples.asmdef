@@ -3,6 +3,8 @@
     "rootNamespace": "Yarde.UnityObservable.Samples",
     "references": [
         "Yarde.UnityObservable",
+        "Yarde.UnityObservable.Bindings.TextMeshPro",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

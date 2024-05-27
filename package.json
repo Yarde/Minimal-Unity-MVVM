@@ -9,5 +9,12 @@
     "name": "Yarde Games",
     "email": "yardegames@gmail.com",
     "url": "https://github.com/Yarde"
-  }
+  },
+  "samples": [
+    {
+      "displayName": "Observable Binding",
+      "description": "Contains sample usage of the bindings",
+      "path": "Samples~/BindingSample"
+    }
+  ]
 }
