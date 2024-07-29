@@ -38,5 +38,16 @@ namespace Yarde.MVVM.Observables
         {
             return OnValueChanged.Subscribe(action);
         }
+
+        public IDisposable InvokeAndSubscribe(Action action)
+        {
+            action.Invoke();
+            return Subscribe(action);
+        }
+
+        public IDisposable Subscribe(Action action)
+        {
+            return OnValueChanged.Subscribe(_ => action.Invoke());
+        }
     }
 }

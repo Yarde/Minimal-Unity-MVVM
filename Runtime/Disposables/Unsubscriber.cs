@@ -2,7 +2,7 @@ using System;
 
 namespace Yarde.MVVM.Disposables
 {
-    public class Unsubscriber : IDisposable
+    internal readonly struct Unsubscriber : IDisposable
     {
         private readonly Action _unsubscribeAction;
 
