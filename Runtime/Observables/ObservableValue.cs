@@ -10,7 +10,7 @@ namespace Yarde.MVVM.Observables
         public ObservableValue(T initialValue = default)
         {
             OnValueChanged = new DisposableSubscription<T>();
-            PreviousValue = _currentValue = initialValue;
+            _currentValue = initialValue;
         }
 
         private DisposableSubscription<T> OnValueChanged { get; }
@@ -22,15 +22,12 @@ namespace Yarde.MVVM.Observables
             {
                 if (_currentValue == null || !_currentValue.Equals(value))
                 {
-                    PreviousValue = _currentValue;
                     _currentValue = value;
                     OnValueChanged?.Invoke(Value);
                 }
             }
         }
-
-        public T PreviousValue { get; private set; }
-
+        
         public IDisposable InvokeAndSubscribe(Action<T> action)
         {
             action.Invoke(Value);
