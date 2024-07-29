@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-using Yarde.UnityObservable.Observables;
+using Yarde.MVVM.Observables;
 
-namespace Yarde.UnityObservable.Bindings
+namespace Yarde.MVVM.Bindings
 {
     public static class ImageBindings
     {

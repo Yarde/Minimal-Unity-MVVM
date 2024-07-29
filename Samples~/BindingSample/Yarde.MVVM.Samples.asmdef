@@ -1,9 +1,9 @@
 {
-    "name": "Yarde.UnityObservable.Samples",
-    "rootNamespace": "Yarde.UnityObservable.Samples",
+    "name": "Yarde.MVVM.Samples",
+    "rootNamespace": "Yarde.MVVM.Samples",
     "references": [
-        "Yarde.UnityObservable",
-        "Yarde.UnityObservable.Bindings.TextMeshPro",
+        "Yarde.MVVM",
+        "Yarde.MVVM.Bindings.TextMeshPro",
         "Unity.TextMeshPro"
     ],
     "includePlatforms": [],

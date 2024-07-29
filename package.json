@@ -1,8 +1,8 @@
 {
-  "name": "com.yarde-games.unity-observable",
+  "name": "com.yarde-games.minimal-mvvm",
   "version": "0.0.1",
-  "displayName": "Unity Observable",
-  "description": "Observable pattern implementation for Unity with disposables",
+  "displayName": "Minimal Unity MVVM",
+  "description": "Implementation of the simplified MVVM pattern in Unity",
   "unity": "2021.1",
   "keywords": ["observable", "disposable", "reactive", "mvvm"],
   "author": {
@@ -15,6 +15,11 @@
       "displayName": "Observable Binding",
       "description": "Contains sample usage of the bindings",
       "path": "Samples~/BindingSample"
+    },
+    {
+      "displayName": "MVVM Sample",
+      "description": "Contains sample View, ViewModel and Model classes",
+      "path": "Samples~/MVVMSample"
     }
   ]
 }

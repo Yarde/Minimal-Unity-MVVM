@@ -1,7 +1,7 @@
 using System;
-using Yarde.UnityObservable.Disposables;
+using Yarde.MVVM.Disposables;
 
-namespace Yarde.UnityObservable.Observables
+namespace Yarde.MVVM.Observables
 {
     public class ObservableValue<T> : IObservableValue<T>
     {

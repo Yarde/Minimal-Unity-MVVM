@@ -1,2 +1,2 @@
-# UnityObservable
-Simple disposable implementation of observable pattern for Unity
+# Minimal Unity MVVM
+Simple implementation of the MVVM architecture for Unity

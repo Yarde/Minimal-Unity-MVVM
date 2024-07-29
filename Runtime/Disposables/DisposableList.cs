@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Yarde.UnityObservable.Disposables
+namespace Yarde.MVVM.Disposables
 {
     public class DisposableList : IDisposable
     {

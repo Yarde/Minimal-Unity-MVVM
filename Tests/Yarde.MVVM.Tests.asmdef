@@ -1,8 +1,8 @@
 {
-    "name": "Yarde.UnityObservable.Tests",
-    "rootNamespace": "Yarde.UnityObservable.Tests",
+    "name": "Yarde.MVVM.Tests",
+    "rootNamespace": "Yarde.MVVM.Tests",
     "references": [
-        "Yarde.UnityObservable",
+        "Yarde.MVVM",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],

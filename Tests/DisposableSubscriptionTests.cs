@@ -1,8 +1,8 @@
 using System;
 using NUnit.Framework;
-using Yarde.UnityObservable.Disposables;
+using Yarde.MVVM.Disposables;
 
-namespace Yarde.UnityObservable.Tests
+namespace Yarde.MVVM.Tests
 {
     public class DisposableSubscriptionTests
     {

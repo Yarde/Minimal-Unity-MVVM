@@ -1,6 +1,6 @@
 {
-  "name": "Yarde.UnityObservable",
-  "rootNamespace": "Yarde.UnityObservable",
+  "name": "Yarde.MVVM",
+  "rootNamespace": "Yarde.MVVM",
   "references": [],
   "includePlatforms": [],
   "excludePlatforms": [],

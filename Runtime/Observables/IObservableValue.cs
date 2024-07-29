@@ -1,6 +1,6 @@
 using System;
 
-namespace Yarde.UnityObservable.Observables
+namespace Yarde.MVVM.Observables
 {
     public interface IObservableValue : IObservableValue<object>
     {

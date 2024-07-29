@@ -1,6 +1,6 @@
 using System;
 
-namespace Yarde.UnityObservable.Disposables
+namespace Yarde.MVVM.Disposables
 {
     public class DisposableSubscription<T> : IDisposable
     {
