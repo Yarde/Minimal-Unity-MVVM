@@ -3,12 +3,12 @@ using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Yarde.UnityObservable.Bindings;
-using Yarde.UnityObservable.Bindings.TextMeshPro;
-using Yarde.UnityObservable.Disposables;
-using Yarde.UnityObservable.Observables;
+using Yarde.MVVM.Bindings;
+using Yarde.MVVM.Bindings.TextMeshPro;
+using Yarde.MVVM.Disposables;
+using Yarde.MVVM.Observables;
 
-namespace Yarde.UnityObservable.Samples_
+namespace Yarde.MVVM.Samples_
 {
     public class BindExample : MonoBehaviour, IDisposable
     {

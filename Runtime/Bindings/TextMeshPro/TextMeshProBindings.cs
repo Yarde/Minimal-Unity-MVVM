@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using Yarde.MVVM.Observables;
 
-namespace Yarde.UnityObservable.Bindings.TextMeshPro
+namespace Yarde.MVVM.Bindings.TextMeshPro
 {
     public static class TextMeshProBindings
     {
