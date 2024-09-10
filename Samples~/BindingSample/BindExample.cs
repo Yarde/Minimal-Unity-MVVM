@@ -6,9 +6,9 @@ using UnityEngine.UI;
 using Yarde.MVVM.Bindings;
 using Yarde.MVVM.Bindings.TextMeshPro;
 using Yarde.MVVM.Disposables;
-using Yarde.MVVM.Model;
+using Yarde.MVVM.Observables;
 
-namespace Yarde.MVVM.Samples_
+namespace Yarde.MVVM.BindSamples_
 {
     public class BindExample : MonoBehaviour, IDisposable
     {

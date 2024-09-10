@@ -1,6 +1,5 @@
 using System.Threading;
 using Yarde.MVVM.Disposables;
-using Yarde.MVVM.Model;
 
 namespace Yarde.MVVM.ViewModel
 {
@@ -25,7 +24,7 @@ namespace Yarde.MVVM.ViewModel
     
     public abstract class ViewModel<TView, TData> : ViewModel<TView>
         where TView : View.View
-        where TData : IModel
+        where TData : Model.Model
     {
         public virtual void Initialize(TView view, TData data, CancellationToken token)
         {

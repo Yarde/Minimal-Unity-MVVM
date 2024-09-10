@@ -17,9 +17,9 @@
       "path": "Samples~/BindingSample"
     },
     {
-      "displayName": "MVVM Sample",
-      "description": "Contains sample View, ViewModel and Model classes",
-      "path": "Samples~/MVVMSample"
+      "displayName": "Cookie ClickerSample",
+      "description": "Cookie clicker game. Contains sample View, ViewModel and Model classes",
+      "path": "Samples~/CookieClickerSample"
     }
   ]
 }

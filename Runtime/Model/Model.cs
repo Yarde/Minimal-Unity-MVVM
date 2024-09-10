@@ -5,7 +5,7 @@ using Yarde.MVVM.Observables;
 
 namespace Yarde.MVVM.Model
 {
-    public class Model : IModel
+    public abstract class Model : Observables.IObservable<Model>
     {
         private readonly List<IObservable> _children = new List<IObservable>();
 
@@ -14,13 +14,13 @@ namespace Yarde.MVVM.Model
             _children.Add(model);
         }
 
-        public IDisposable InvokeAndSubscribe(Action<IModel> action)
+        public IDisposable InvokeAndSubscribe(Action<Model> action)
         {
             action.Invoke(this);
             return Subscribe(action);
         }
 
-        public IDisposable Subscribe(Action<IModel> action)
+        public IDisposable Subscribe(Action<Model> action)
         {
             return Subscribe(() => action.Invoke(this));
         }

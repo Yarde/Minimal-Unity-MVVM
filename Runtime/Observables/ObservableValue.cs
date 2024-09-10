@@ -14,7 +14,7 @@ namespace Yarde.MVVM.Observables
             _currentValue = initialValue;
         }
         
-        public ObservableValue(IModel parent, T initialValue = default) : this(initialValue)
+        public ObservableValue(Model.Model parent, T initialValue = default) : this(initialValue)
         {
             parent.Add(this);
         }

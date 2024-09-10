@@ -1,0 +1,17 @@
+{
+    "name": "Yarde.MVVM.BindSamples",
+    "rootNamespace": "Yarde.MVVM.BindSamples",
+    "references": [
+        "Yarde.MVVM",
+        "Yarde.MVVM.Bindings.TextMeshPro",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
