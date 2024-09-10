@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using Yarde.MVVM.Bindings;
 using Yarde.MVVM.Bindings.TextMeshPro;
 using Yarde.MVVM.Disposables;
-using Yarde.MVVM.Observables;
+using Yarde.MVVM.Model;
 
 namespace Yarde.MVVM.Samples_
 {

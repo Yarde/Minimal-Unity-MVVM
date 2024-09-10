@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarde.MVVM.Model;
 using Yarde.MVVM.Observables;
 
 namespace Yarde.MVVM.Bindings

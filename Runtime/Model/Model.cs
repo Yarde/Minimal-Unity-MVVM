@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using Yarde.MVVM.Disposables;
+using Yarde.MVVM.Observables;
 
-namespace Yarde.MVVM.Observables
+namespace Yarde.MVVM.Model
 {
-    public class ObservableModel : IObservableModel
+    public class Model : IModel
     {
         private readonly List<IObservable> _children = new List<IObservable>();
 
@@ -13,13 +14,13 @@ namespace Yarde.MVVM.Observables
             _children.Add(model);
         }
 
-        public IDisposable InvokeAndSubscribe(Action<IObservableModel> action)
+        public IDisposable InvokeAndSubscribe(Action<IModel> action)
         {
             action.Invoke(this);
             return Subscribe(action);
         }
 
-        public IDisposable Subscribe(Action<IObservableModel> action)
+        public IDisposable Subscribe(Action<IModel> action)
         {
             return Subscribe(() => action.Invoke(this));
         }

@@ -1,5 +1,6 @@
 using System;
 using Yarde.MVVM.Disposables;
+using Yarde.MVVM.Model;
 
 namespace Yarde.MVVM.Observables
 {
@@ -11,6 +12,11 @@ namespace Yarde.MVVM.Observables
         {
             OnValueChanged = new DisposableSubscription<T>();
             _currentValue = initialValue;
+        }
+        
+        public ObservableValue(IModel parent, T initialValue = default) : this(initialValue)
+        {
+            parent.Add(this);
         }
 
         private DisposableSubscription<T> OnValueChanged { get; }

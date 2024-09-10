@@ -1,11 +1,10 @@
 using System.Threading;
 using Yarde.MVVM.Disposables;
-using Yarde.MVVM.Observables;
+using Yarde.MVVM.Model;
 
 namespace Yarde.MVVM.ViewModel
 {
-    public abstract class ViewModel<TView>
-        where TView : View.View
+    public abstract class ViewModel<TView> where TView : View.View
     {
         protected TView View;
         protected readonly DisposableList Disposables = new DisposableList();
@@ -26,7 +25,7 @@ namespace Yarde.MVVM.ViewModel
     
     public abstract class ViewModel<TView, TData> : ViewModel<TView>
         where TView : View.View
-        where TData : IObservableModel
+        where TData : IModel
     {
         public virtual void Initialize(TView view, TData data, CancellationToken token)
         {

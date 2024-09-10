@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using Yarde.MVVM.Model;
 using Yarde.MVVM.Observables;
 
 namespace Yarde.MVVM.Bindings.TextMeshPro
