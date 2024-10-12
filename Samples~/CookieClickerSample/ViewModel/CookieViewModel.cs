@@ -8,15 +8,15 @@ namespace Yarde.Example.CookieClicker.ViewModel
 {
     public class CookieViewModel : ViewModel<CookieView, CookieModel>
     {
-        protected override void SetupBindings(CookieModel data)
+        protected override void SetupBindings(CookieModel model)
         {
-            View.ScoreText.Bind(data.Score).AddTo(Disposables);
-            View.Button.onClick.AddListener(() => UpdateModel(data));
+            View.ScoreText.Bind(model.Score).AddTo(Disposables);
+            View.Button.onClick.AddListener(() => UpdateModel(model));
         }
 
-        private void UpdateModel(CookieModel data)
+        private void UpdateModel(CookieModel model)
         {
-            data.IncrementScore();
+            model.IncrementScore();
         }
     }
 }
