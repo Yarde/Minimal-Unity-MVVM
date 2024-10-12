@@ -14,7 +14,7 @@ namespace Yarde.MVVM.Tests
             disposableSubscription.Subscribe(Action);
 
             disposableSubscription.Dispose();
-            
+
             disposableSubscription.Invoke(1);
 
             return;
@@ -24,7 +24,7 @@ namespace Yarde.MVVM.Tests
                 throw new Exception();
             }
         }
-        
+
         [Test]
         public void SingleSubscribeTest()
         {
@@ -34,9 +34,9 @@ namespace Yarde.MVVM.Tests
             disposableSubscription.Subscribe(Action);
 
             disposableSubscription.Invoke(1);
-            
+
             disposableSubscription.Dispose();
-            
+
             disposableSubscription.Invoke(1);
 
             Assert.AreEqual(1, value);
@@ -47,7 +47,7 @@ namespace Yarde.MVVM.Tests
                 value += i;
             }
         }
-        
+
         [Test]
         public void MultipleSubscribeTest()
         {
@@ -59,9 +59,9 @@ namespace Yarde.MVVM.Tests
             disposableSubscription.Subscribe(Action3);
 
             disposableSubscription.Invoke(1);
-            
+
             disposableSubscription.Dispose();
-            
+
             disposableSubscription.Invoke(1);
 
             Assert.AreEqual(3, value);
@@ -71,12 +71,12 @@ namespace Yarde.MVVM.Tests
             {
                 value += i;
             }
-            
+
             void Action2(int i)
             {
                 value += i;
             }
-            
+
             void Action3(int i)
             {
                 value += i;

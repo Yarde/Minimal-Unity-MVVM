@@ -11,12 +11,12 @@ namespace Yarde.MVVM.Disposables
         {
             _disposables = new List<IDisposable>();
         }
-        
+
         public DisposableList(int count)
         {
             _disposables = new List<IDisposable>(count);
         }
-        
+
         public IDisposable Add(IDisposable disposable)
         {
             _disposables.Add(disposable);

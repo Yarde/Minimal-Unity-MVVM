@@ -4,6 +4,8 @@ namespace Yarde.MVVM.Disposables
 {
     internal class EmptyDisposable : IDisposable
     {
-        public void Dispose() { }
+        public void Dispose()
+        {
+        }
     }
 }

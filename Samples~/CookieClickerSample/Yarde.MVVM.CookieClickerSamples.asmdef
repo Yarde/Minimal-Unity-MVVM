@@ -1,17 +1,17 @@
 {
-    "name": "Yarde.MVVM.Samples",
-    "rootNamespace": "Yarde.MVVM.Samples",
-    "references": [
-        "Yarde.MVVM",
-        "Yarde.MVVM.Bindings.TextMeshPro",
-        "Unity.TextMeshPro"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "autoReferenced": false,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+  "name": "Yarde.MVVM.Samples",
+  "rootNamespace": "Yarde.MVVM.Samples",
+  "references": [
+    "Yarde.MVVM",
+    "Yarde.MVVM.Bindings.TextMeshPro",
+    "Unity.TextMeshPro"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
 }

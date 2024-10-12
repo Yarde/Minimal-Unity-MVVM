@@ -7,7 +7,7 @@ namespace Yarde.MVVM.Observables
         IDisposable Subscribe(Action<T> observer);
         IDisposable InvokeAndSubscribe(Action<T> observer);
     }
-    
+
     public interface IObservable
     {
         IDisposable Subscribe(Action observer);

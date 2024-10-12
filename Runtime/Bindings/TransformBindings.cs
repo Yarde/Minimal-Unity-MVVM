@@ -11,7 +11,7 @@ namespace Yarde.MVVM.Bindings
         {
             return observable.InvokeAndSubscribe(v => transform.gameObject.SetActive(v));
         }
-        
+
         public static IDisposable Bind(this Transform transform, IObservableValue<Vector3> observable)
         {
             return observable.InvokeAndSubscribe(v => transform.localScale = v);

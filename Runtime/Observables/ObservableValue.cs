@@ -13,7 +13,7 @@ namespace Yarde.MVVM.Observables
             OnValueChanged = new DisposableSubscription<T>();
             _currentValue = initialValue;
         }
-        
+
         public ObservableValue(Model.Model parent, T initialValue = default) : this(initialValue)
         {
             parent.Add(this);
@@ -33,7 +33,7 @@ namespace Yarde.MVVM.Observables
                 }
             }
         }
-        
+
         public IDisposable InvokeAndSubscribe(Action<T> action)
         {
             action.Invoke(Value);

@@ -10,19 +10,20 @@ namespace Yarde.MVVM.ViewModel
         protected CancellationTokenSource CloseSource { get; private set; }
         protected readonly DisposableList Disposables = new DisposableList();
 
-        public virtual void Initialize(TView view, CancellationToken token)
+        public virtual void Initialize(TView view, CancellationToken parentCloseSource)
         {
             View = view;
             Disposables.Add(view);
-            
-            InitializeLifecycleToken(view, token);
+
+            InitializeLifecycleToken(view, parentCloseSource);
         }
 
-        private void InitializeLifecycleToken(TView view, CancellationToken token)
+        private void InitializeLifecycleToken(TView view, CancellationToken parentCloseSource)
         {
-            CloseSource = CancellationTokenSource.CreateLinkedTokenSource(view.destroyCancellationToken, token)
+            CloseSource = CancellationTokenSource
+                .CreateLinkedTokenSource(view.destroyCancellationToken, parentCloseSource)
                 .AddTo(Disposables);
-            
+
             CloseSource.Token.Register(InternalClose).AddTo(Disposables);
         }
 
@@ -37,13 +38,13 @@ namespace Yarde.MVVM.ViewModel
                 CloseSource.Cancel();
             }
         }
-        
+
         private void InternalClose()
         {
             Disposables.Dispose();
         }
     }
-    
+
     public abstract class ViewModel<TView, TData> : ViewModel<TView>
         where TView : View.View
         where TData : Model.Model

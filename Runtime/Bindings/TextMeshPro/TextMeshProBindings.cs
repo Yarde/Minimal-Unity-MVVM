@@ -12,7 +12,7 @@ namespace Yarde.MVVM.Bindings.TextMeshPro
         {
             return observable.InvokeAndSubscribe(v => textMeshPro.SetText(v.ToString()));
         }
-        
+
         public static IDisposable Bind(this TMP_Text textMeshPro, IObservableValue<Color> observable)
         {
             return observable.InvokeAndSubscribe(v => textMeshPro.color = v);

@@ -38,7 +38,7 @@ namespace Yarde.MVVM.Model
             {
                 return new EmptyDisposable();
             }
-    
+
             if (count == 1)
             {
                 return _children[0].Subscribe(action);
@@ -49,6 +49,7 @@ namespace Yarde.MVVM.Model
             {
                 disposables.Add(_children[i].Subscribe(action));
             }
+            
             return disposables;
         }
     }

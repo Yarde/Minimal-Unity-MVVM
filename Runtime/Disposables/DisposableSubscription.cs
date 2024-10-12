@@ -6,8 +6,8 @@ namespace Yarde.MVVM.Disposables
     {
         private event Action<T> SubscribeAction;
 
-        private readonly DisposableList _disposablesList = new();
-        
+        private readonly DisposableList _disposablesList = new DisposableList();
+
         public void Invoke(T value)
         {
             SubscribeAction?.Invoke(value);

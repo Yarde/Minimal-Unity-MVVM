@@ -4,7 +4,12 @@
   "displayName": "Minimal Unity MVVM",
   "description": "Implementation of the simplified MVVM pattern in Unity",
   "unity": "2021.1",
-  "keywords": ["observable", "disposable", "reactive", "mvvm"],
+  "keywords": [
+    "observable",
+    "disposable",
+    "reactive",
+    "mvvm"
+  ],
   "author": {
     "name": "Yarde Games",
     "email": "yardegames@gmail.com",
